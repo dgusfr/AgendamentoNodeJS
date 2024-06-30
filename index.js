@@ -24,5 +24,9 @@ app.get("/", (req, res) => {
   res.send("Olá, Mundo!");
 });
 
+app.get("/cadastro", (req, res) => {
+  res.render("create");
+});
+
 // Servidor
-app.listen(8080, () => {});
+app.listen(8000, () => {});
