@@ -4,7 +4,7 @@ var mongoose = require("mongoose");
 const Appo = mongoose.model("Appointment", appointment);
 
 class AppointmentService {
-  async create(name, email, description, cpf, date, time) {
+  async Create(name, email, description, cpf, date, time) {
     var newAppo = new Appo({
       name,
       email,
