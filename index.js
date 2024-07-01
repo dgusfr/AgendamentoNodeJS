@@ -30,7 +30,7 @@ app.get("/cadastro", (req, res) => {
 });
 
 app.post("/create", async (req, res) => {
-  await appointmentService.Create(
+  const status = await appointmentService.Create(
     req.body.name,
     req.body.email,
     req.body.description,
@@ -38,6 +38,10 @@ app.post("/create", async (req, res) => {
     req.body.date,
     req.body.time
   );
+  if (status) {
+  } else {
+    res.send("Ocorreu uma falha");
+  }
 });
 
 // Servidor
