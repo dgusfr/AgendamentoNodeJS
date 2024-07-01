@@ -15,7 +15,11 @@ class AppointmentService {
     });
     try {
       await newAppo.save();
-    } catch (err) {}
+      return true;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
   }
 }
 
