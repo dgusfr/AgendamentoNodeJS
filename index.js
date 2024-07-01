@@ -22,7 +22,7 @@ mongoose.connect("mongodb://localhost:27017/agendamento", {
 
 // Model - Usuários
 app.get("/", (req, res) => {
-  res.send("Olá, Mundo!");
+  res.render("index");
 });
 
 app.get("/cadastro", (req, res) => {
