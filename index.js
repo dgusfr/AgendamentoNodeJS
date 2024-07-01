@@ -79,5 +79,5 @@ setInterval(async () => {
 }, pollTime);
 
 app.listen(3000, () => {
-  console.log("Servidro rodando!");
+  console.log("Servidor rodando!");
 });
