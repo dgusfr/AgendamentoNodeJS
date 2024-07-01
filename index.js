@@ -39,6 +39,7 @@ app.post("/create", async (req, res) => {
     req.body.time
   );
   if (status) {
+    res.redirect("/");
   } else {
     res.send("Ocorreu uma falha");
   }
