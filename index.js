@@ -46,4 +46,6 @@ app.post("/create", async (req, res) => {
 });
 
 // Servidor
-app.listen(8000, () => {});
+app.listen(8000, () => {
+  console.log("Servidor rodando");
+});
