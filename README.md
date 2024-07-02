@@ -160,40 +160,48 @@ Listagem de Compromissos
 
 ```javascript
 app.get("/list", async (req, res) => {
-var appos = await AppointmentService.GetAll(true);
-res.render("list", { appos });
+  var appos = await AppointmentService.GetAll(true);
+  res.render("list", { appos });
 });
+```
+
 Renderiza a lista de compromissos.
 
 Busca de Compromissos
-javascript
-Copiar código
+
+```javascript
 app.get("/searchresult", async (req, res) => {
-var appos = await AppointmentService.Search(req.query.search);
-res.render("list", { appos });
+  var appos = await AppointmentService.Search(req.query.search);
+  res.render("list", { appos });
 });
+```
+
 Busca compromissos por CPF ou nome.
 
-4. Notificações
-   javascript
-   Copiar código
-   var pollTime = 1000 _ 60 _ 5;
+### 4. Notificações
 
+```javascript
+
+var pollTime = 1000 _ 60 _ 5;
 setInterval(async () => {
 await AppointmentService.SendNotification();
 }, pollTime);
+```
+
 Configura o envio de notificações a cada 5 minutos.
 
-5. Início do Servidor
-   javascript
-   Copiar código
-   app.listen(3000, () => {
-   console.log("Servidor rodando!");
-   });
-   Inicia o servidor na porta 3000.
+### 5. Início do Servidor
 
-Como Usar
-Clone o repositório.
-Instale as dependências com npm install.
-Inicie o servidor com npm start.
+```javascript
+app.listen(3000, () => {
+  console.log("Servidor rodando!");
+});
 ```
+
+Inicia o servidor na porta 3000.
+
+# Como Usar
+
+`1.` Clone o repositório.
+`2.`Instale as dependências com npm install.
+`3.`Inicie o servidor com npm start.
