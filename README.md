@@ -78,7 +78,7 @@ Aqui, estabelecemos a conexão com o banco de dados MongoDB.
 
 ### 3. Rotas
 
-Rota Principal
+#### Rota Principal
 
 ```javascript
 app.get("/", (req, res) => {
@@ -88,7 +88,7 @@ app.get("/", (req, res) => {
 
 Renderiza a página principal.
 
-Rota de Cadastro
+#### Rota de Cadastro
 
 ```javascript
 app.get("/cadastro", (req, res) => {
@@ -96,7 +96,7 @@ app.get("/cadastro", (req, res) => {
 });
 ```
 
-Renderiza a página de cadastro.
+#### Renderiza a página de cadastro.
 
 Criação de Compromisso
 
@@ -121,7 +121,7 @@ app.post("/create", async (req, res) => {
 
 Processa a criação de um novo compromisso e redireciona para a página principal se bem-sucedido.
 
-Obtenção de Compromissos
+#### Obtenção de Compromissos
 
 ```javascript
 app.get("/getcalendar", async (req, res) => {
@@ -132,7 +132,7 @@ app.get("/getcalendar", async (req, res) => {
 
 Retorna todos os compromissos em formato JSON.
 
-Visualização de Compromisso
+#### Visualização de Compromisso
 
 ```javascript
 app.get("/event/:id", async (req, res) => {
@@ -144,7 +144,7 @@ app.get("/event/:id", async (req, res) => {
 
 Renderiza a página de um compromisso específico.
 
-Conclusão de Compromisso
+#### Conclusão de Compromisso
 
 ```javascript
 app.post("/finish", async (req, res) => {
@@ -156,7 +156,7 @@ app.post("/finish", async (req, res) => {
 
 Marca um compromisso como concluído.
 
-Listagem de Compromissos
+#### Listagem de Compromissos
 
 ```javascript
 app.get("/list", async (req, res) => {
@@ -167,7 +167,7 @@ app.get("/list", async (req, res) => {
 
 Renderiza a lista de compromissos.
 
-Busca de Compromissos
+#### Busca de Compromissos
 
 ```javascript
 app.get("/searchresult", async (req, res) => {
@@ -188,7 +188,7 @@ await AppointmentService.SendNotification();
 }, pollTime);
 ```
 
-Configura o envio de notificações a cada 5 minutos.
+#### Configura o envio de notificações a cada 5 minutos.
 
 ### 5. Início do Servidor
 
@@ -200,13 +200,13 @@ app.listen(3000, () => {
 
 Inicia o servidor na porta 3000.
 
-# Como Usar
+## Como Usar
 
 `1.` Clone o repositório.
 `2.`Instale as dependências com npm install.
 `3.`Inicie o servidor com npm start.
 
-# Estrutura do projeto
+## Estrutura do projeto
 
 /
 ├── factories/
@@ -223,3 +223,7 @@ Inicia o servidor na porta 3000.
 │ └── event.ejs
 │ └── list.ejs
 └── index.js
+
+# Autor
+
+Desenvolvido por Diego Franco
