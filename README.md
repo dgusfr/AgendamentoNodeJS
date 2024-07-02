@@ -145,18 +145,20 @@ app.get("/event/:id", async (req, res) => {
 Renderiza a página de um compromisso específico.
 
 Conclusão de Compromisso
-javascript
-Copiar código
+
+```javascript
 app.post("/finish", async (req, res) => {
-var id = req.body.id;
-var result = await AppointmentService.Finish(id);
-res.redirect("/");
+  var id = req.body.id;
+  var result = await AppointmentService.Finish(id);
+  res.redirect("/");
 });
+```
+
 Marca um compromisso como concluído.
 
 Listagem de Compromissos
-javascript
-Copiar código
+
+```javascript
 app.get("/list", async (req, res) => {
 var appos = await AppointmentService.GetAll(true);
 res.render("list", { appos });
@@ -194,3 +196,4 @@ Como Usar
 Clone o repositório.
 Instale as dependências com npm install.
 Inicie o servidor com npm start.
+```
