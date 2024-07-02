@@ -3,7 +3,7 @@
 Este projeto é um sistema de agendamento utilizando Node.js, Express e FullCalendar. Permite criar, visualizar e gerenciar compromissos.
 
 <div align="center">
-  <img src="img/logo.png" alt="Imagem do Projeto" width="100">
+  <img src="img/logo.png" alt="Imagem do Projeto" width="900">
 </div>
 
 ## Sumário
@@ -20,10 +20,16 @@ Este projeto é um sistema de agendamento utilizando Node.js, Express e FullCale
 
 <div style="display: flex; flex-direction: row;">
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/js.png" alt="Logo Linguagem" width="100"/>
+    <img src="img/js.png" alt="Logo Linguagem" width="250"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/node.png" alt="Logo Linguagem" width="100"/>
+    <img src="img/node.png" alt="Logo Linguagem" width="250"/>
+  </div>
+  <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
+    <img src="img/express.png" alt="Logo Linguagem" width="250"/>
+  </div>
+  <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
+    <img src="img/mongodb.png" alt="Logo Linguagem" width="250"/>
   </div>
 </div>
 
@@ -208,20 +214,32 @@ Inicia o servidor na porta 3000.
 
 ## Estrutura do projeto
 
-/
 ├── factories/
-│ └── AppointmentFactory.js
+
+└── AppointmentFactory.js
+
 ├── services/
-│ └── AppointmentService.js
+
+└── AppointmentService.js
+
 ├── models/
-│ └── Appointment.js
+
+└── Appointment.js
+
 ├── public/
-│ └── (arquivos estáticos como CSS, JS, imagens)
+
+└── (arquivos estáticos como CSS, JS, imagens)
+
 ├── views/
-│ └── index.ejs
-│ └── create.ejs
-│ └── event.ejs
-│ └── list.ejs
+
+└── index.ejs
+
+└── create.ejs
+
+└── event.ejs
+
+└── list.ejs
+
 └── index.js
 
 # Autor
