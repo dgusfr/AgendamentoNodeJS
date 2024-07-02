@@ -205,3 +205,21 @@ Inicia o servidor na porta 3000.
 `1.` Clone o repositório.
 `2.`Instale as dependências com npm install.
 `3.`Inicie o servidor com npm start.
+
+# Estrutura do projeto
+
+/
+├── factories/
+│ └── AppointmentFactory.js
+├── services/
+│ └── AppointmentService.js
+├── models/
+│ └── Appointment.js
+├── public/
+│ └── (arquivos estáticos como CSS, JS, imagens)
+├── views/
+│ └── index.ejs
+│ └── create.ejs
+│ └── event.ejs
+│ └── list.ejs
+└── index.js
