@@ -26,16 +26,16 @@ Este projeto é um sistema de agendamento utilizando Node.js, Express e FullCale
 
 <div style="display: flex; flex-direction: row;">
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/js.png" alt="Logo Linguagem" width="250"/>
+    <img src="img/js.png" alt="Logo Linguagem" width="200"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/node.png" alt="Logo Linguagem" width="250"/>
+    <img src="img/node.png" alt="Logo Linguagem" width="200"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/express.png" alt="Logo Linguagem" width="250"/>
+    <img src="img/express.png" alt="Logo Linguagem" width="200"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/mongodb.png" alt="Logo Linguagem" width="250"/>
+    <img src="img/mongodb.png" alt="Logo Linguagem" width="200"/>
   </div>
 </div>
 
@@ -123,6 +123,8 @@ app.get("/", (req, res) => {
 
 Renderiza a página principal.
 
+<br>
+
 #### Rota de Cadastro
 
 ```javascript
@@ -130,6 +132,8 @@ app.get("/cadastro", (req, res) => {
   res.render("create");
 });
 ```
+
+<br>
 
 #### Renderiza a página de cadastro.
 
@@ -156,6 +160,8 @@ app.post("/create", async (req, res) => {
 
 Processa a criação de um novo compromisso e redireciona para a página principal se bem-sucedido.
 
+<br>
+
 #### Obtenção de Compromissos
 
 ```javascript
@@ -166,6 +172,8 @@ app.get("/getcalendar", async (req, res) => {
 ```
 
 Retorna todos os compromissos em formato JSON.
+
+<br>
 
 #### Visualização de Compromisso
 
@@ -179,6 +187,8 @@ app.get("/event/:id", async (req, res) => {
 
 Renderiza a página de um compromisso específico.
 
+<br>
+
 #### Conclusão de Compromisso
 
 ```javascript
@@ -191,6 +201,8 @@ app.post("/finish", async (req, res) => {
 
 Marca um compromisso como concluído.
 
+<br>
+
 #### Listagem de Compromissos
 
 ```javascript
@@ -201,6 +213,8 @@ app.get("/list", async (req, res) => {
 ```
 
 Renderiza a lista de compromissos.
+
+<br>
 
 #### Busca de Compromissos
 
@@ -247,7 +261,9 @@ Inicia o servidor na porta 3000.
 ## Como Usar
 
 `1.` Clone o repositório.
+
 `2.`Instale as dependências com npm install.
+
 `3.`Inicie o servidor com npm start.
 
 <br>
