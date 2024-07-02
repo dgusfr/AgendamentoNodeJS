@@ -1,5 +1,8 @@
 # Sistema de Agendamento
 
+<br>
+<br>
+
 Este projeto é um sistema de agendamento utilizando Node.js, Express e FullCalendar. Permite criar, visualizar e gerenciar compromissos.
 
 <div align="center">
@@ -15,6 +18,9 @@ Este projeto é um sistema de agendamento utilizando Node.js, Express e FullCale
 - [Explicação](#explicação)
 - [Como Usar](#como-usar)
 - [Autor](#autor)
+
+<br>
+<br>
 
 ## Tecnologias Utilizadas
 
@@ -33,13 +39,22 @@ Este projeto é um sistema de agendamento utilizando Node.js, Express e FullCale
   </div>
 </div>
 
+<br>
+<br>
+
 ## Status
 
 ![Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
+<br>
+<br>
+
 ## Descrição
 
 Este projeto é um sistema de agendamento desenvolvido com Node.js e Express, integrado com o FullCalendar para visualização dos compromissos. Permite o cadastro, listagem, busca, e notificação de compromissos.
+
+<br>
+<br>
 
 ## Funcionalidades
 
@@ -48,9 +63,15 @@ Este projeto é um sistema de agendamento desenvolvido com Node.js e Express, in
 - Listagem e busca de compromissos.
 - Envio de notificações para compromissos próximos.
 
+<br>
+<br>
+
 ## Explicação
 
 O código é um sistema de agendamento desenvolvido com Node.js e Express, utilizando MongoDB para armazenamento de dados. Ele configura o servidor, define rotas para exibir páginas de cadastro, listar e buscar compromissos, além de criar, visualizar, concluir e notificar compromissos. A interface é gerada com EJS e os dados são manipulados através do serviço AppointmentService. As notificações são enviadas periodicamente a cada 5 minutos, e o servidor é iniciado na porta 3000.
+
+<br>
+<br>
 
 ### 1. Configuração Inicial
 
@@ -72,6 +93,9 @@ app.set("view engine", "ejs");
 
 Nesta seção, configuramos o Express, definimos o uso do BodyParser para parsing de requisições e configuramos a engine de visualização EJS. Também importamos o serviço de agendamentos.
 
+<br>
+<br>
+
 ### 2. Conexão com o Banco de Dados
 
 ```javascript
@@ -83,6 +107,9 @@ mongoose.set("useFindAndModify", false);
 ```
 
 Aqui, estabelecemos a conexão com o banco de dados MongoDB.
+
+<br>
+<br>
 
 ### 3. Rotas
 
@@ -186,6 +213,9 @@ app.get("/searchresult", async (req, res) => {
 
 Busca compromissos por CPF ou nome.
 
+<br>
+<br>
+
 ### 4. Notificações
 
 ```javascript
@@ -198,6 +228,9 @@ await AppointmentService.SendNotification();
 
 #### Configura o envio de notificações a cada 5 minutos.
 
+<br>
+<br>
+
 ### 5. Início do Servidor
 
 ```javascript
@@ -208,11 +241,17 @@ app.listen(3000, () => {
 
 Inicia o servidor na porta 3000.
 
+<br>
+<br>
+
 ## Como Usar
 
 `1.` Clone o repositório.
 `2.`Instale as dependências com npm install.
 `3.`Inicie o servidor com npm start.
+
+<br>
+<br>
 
 ## Estrutura do projeto
 
@@ -243,6 +282,9 @@ Inicia o servidor na porta 3000.
 └── list.ejs
 
 └── index.js
+
+<br>
+<br>
 
 # Autor
 
