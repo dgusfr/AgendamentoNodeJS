@@ -50,6 +50,8 @@ Este projeto é um sistema de agendamento desenvolvido com Node.js e Express, in
 
 ## Explicação
 
+O código é um sistema de agendamento desenvolvido com Node.js e Express, utilizando MongoDB para armazenamento de dados. Ele configura o servidor, define rotas para exibir páginas de cadastro, listar e buscar compromissos, além de criar, visualizar, concluir e notificar compromissos. A interface é gerada com EJS e os dados são manipulados através do serviço AppointmentService. As notificações são enviadas periodicamente a cada 5 minutos, e o servidor é iniciado na porta 3000.
+
 ### 1. Configuração Inicial
 
 ```javascript
