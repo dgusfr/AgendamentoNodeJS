@@ -1,7 +1,5 @@
 # Sistema de Agendamento
 
-afaffsafsasdasASaddADSASASDASDAZ\Xsaasdadasfa
-
 <br>
 <br>
 
