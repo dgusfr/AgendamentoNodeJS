@@ -4,9 +4,6 @@
 <br>
 
 Este projeto é um sistema de agendamento utilizando Node.js, Express e FullCalendar. Permite criar, visualizar e gerenciar compromissos.
-c
-Ddacaca
-asda
 
 <div align="center">
   <img src="img/logo.png" alt="Imagem do Projeto" width="900">
